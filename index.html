@@ -47,7 +47,7 @@
             }
         }
 
-        const button = document.querySelector("#calcBtn") ;
+        let button = document.querySelector("#calcBtn") ;
         const result = document.querySelector("#result") ;
 
     button. addEventListener("click" , () => {
@@ -57,7 +57,7 @@
         console.log(height)
 
         if (height <= 0 || weight <= 0) {
-            result.textContent = "身長と体重を入力してください";
+            result.textContent = "身長と体重を正しく入力してください。";
             return;
         }
         const bmi = calcBmi(height, weight);
